@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="formatacaocontato.css">
+        <script src="validacao.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="../galeria/Imagem/logo.png" alt='logotipo' id="logo" width=130 height=130>
+            <h1>Clínica Rede Mais</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+                <li><a href="../agendamento/Agendamento.php">Agendamento de Consulta</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h3> Tem dúvidas, sugestões ou reclamações? </h3>
+            <p> Prencha agora o formulário e entraremos em contato para mais informações.</p>
+
+            <form name="formcontato" action="contato.php" method="post">
+                <div class="row" >
+                    <div class="col-sm gy-8">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 gy-5">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <span></span>
+                    </div>
+
+                    <div class="col-sm-4 gy-5">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group gy-5">
+                        <span class="input-group-text">Comentário</span>
+                        <textarea class="form-control" aria-label="With textarea" name="comentario"></textarea>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-3 gy-5">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="bi bi-plus"></span>
+                        QUERO SABER MAIS!</button>
+                    </div>
+                </div>   
+            </form>
+            
+        </main>
+
+        <footer>
+            <address>
+                <img src="../galeria/Imagem/localizacao.png" alt="Icone localizacao" height="20" width="20"> Av. João Naves de Ávila, 2121, Santa Mônica, Uberlândia-MG<br>
+                <img src="../galeria/Imagem/telefone.png" alt="Icone telefone" height="20" width="20"> (34) 99999-9999
+            </address>
+        </footer>
+    </body>
+</html>
